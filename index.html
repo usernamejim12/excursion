@@ -9,20 +9,50 @@
       font-size: 16px;
       text-align: center;
       background-color: black;
-    }
-    h1 {
       font-family: Verdana;
+    }
+
+    h1 {
       font-weight: 300;
       font-size: 2.625rem;
       color: white;
     }
+
     h1 .Discover {
       font-weight: normal;
       font-size: 3.125rem;
     }
+
     div h3 a {
       color: Aquamarine;
       font-size: 1rem;
+      text-decoration: underline;
+    }
+
+    p {
+      color: gray;
+      font-size: 1.3125 rem;
+    }
+
+    /*
+    Do not use display: flex; here else hard to center
+    img {
+    }
+    */
+
+    img .Guide {
+      display: flex;
+
+      flex-basis: 40rem;
+    }
+
+    img .Download {
+      display: flex;
+      flex-basis: 4rem;
+    }
+
+    footer {
+      text-align: right;
     }
   </style>
 </head>
@@ -32,12 +62,18 @@
     <div class="Discover">    
       <h1>Discover hidden places in the world around you</h1>
       <h3><a>Download Excursion (Coming soon!)</a></h3>
+      <video width="320" autoplay muted>
+        <source src="resources/videos/excursion.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
     </div>
-    <div>
+    <div class="Guide">
       <h1>Your personal travel guide</h1>
       <p>Excursion remembers places you like, and recommends new points of interest around you.</p>
+      <img src="resources/images/camp.jpeg" alt="Camp">
     </div>
-    <div>
+    <div class="Download">
+      <img src="resources/images/phone.png" alt="Phone Icon">
       <h1>Coming Soon for iPhone and Android</h1>
       <h3><a>Download Excursion (Coming soon!)</a></h3>
     </div>
